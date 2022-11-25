@@ -6,15 +6,16 @@ class Employee:
     self.rate = float(rate)
     self.overtimeRate = float(overtimeRate)
     self.weeklytaxcredit = float(weeklytaxcredit)
+    self.grossPay = 0
     
   def computeWeeklyPay (self,hours):
     if hours >=0:
-
-      if hours <= 40:
- 	        return ( hours  * )
-      elif hours > 40:
-	        return (40* rate + (h-40)*1.5*rate)
-    
+      if hours > self.weeklyhours:
+        self.grosspay = ( hours * self.rate)
+ 	        return self.grossPay
+      elif hours > self.weeklyhours:
+        self.grosspay = (self.weeklyhours * self.rate + (hours - self.weeklyhours)* self.overtimeRate)
+	        return self.grosspay
     else:
       return "Hours cannot be negative"
 
@@ -28,3 +29,5 @@ class Employee:
         return 0
     else:
       return "Negative entry not allowed"
+
+
