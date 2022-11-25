@@ -2,18 +2,15 @@ class Employee:
 
   def __init__(self,name,weeklyhours,rate,overtimeRate,weeklytaxcredit):
     self.name = name
-    self.weeklyhours = float(weeklyhoursrs)
+    self.weeklyhours = float(weeklyhours)
     self.rate = float(rate)
     self.overtimeRate = float(overtimeRate)
     self.weeklytaxcredit = float(weeklytaxcredit)
 
-  def computeWeeklyPay (self,hrs):
-    hrs = input(float("Enter Hours:"))
-    rate = input(float("Enter the Rate:"))
+  def computeWeeklyPay (self,hours):
     if hrs <= 40:
- 	      print( h  * x)
+ 	      return ( h  * x)
     elif hrs > 40:
-	      print(40* rate + (h-40)*1.5*rate)
-
-
-  def computeTax(self,grossPay):
+	      return (40* rate + (h-40)*1.5*rate)
+    else:
+      return "Hours cannot be negative"
