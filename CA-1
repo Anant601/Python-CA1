@@ -1,0 +1,16 @@
+class Employee:
+  weeklyhours = weeklyhours()
+  rate = rate()
+  overtimeRate = overtimerate()
+  weeklytaxcredit = weeklytaxcredit()
+
+  def computeWeeklyPay (self,hrs):
+    hrs = input(float("Enter Hours:"))
+    rate = input(float("Enter the Rate:"))
+    if hrs <= 40:
+ 	      print( h  * x)
+    elif hrs > 40:
+	      print(40* rate + (h-40)*1.5*rate)
+
+
+  def computeTax(self,grossPay)    
