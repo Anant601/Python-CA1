@@ -1,11 +1,11 @@
 class Employee:
 
   def __init__(self,name,weeklyhours,rate,overtimeRate,weeklytaxcredit):
-    self.name =
-    self.weeklyhours = 
-    self.rate = rate()
-    self.overtimeRate = 
-    self.weeklytaxcredit = 
+    self.name = name
+    self.weeklyhours = float(weeklyhoursrs)
+    self.rate = float(rate)
+    self.overtimeRate = float(overtimeRate)
+    self.weeklytaxcredit = float(weeklytaxcredit)
 
   def computeWeeklyPay (self,hrs):
     hrs = input(float("Enter Hours:"))
