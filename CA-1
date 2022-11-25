@@ -1,8 +1,11 @@
 class Employee:
-  weeklyhours = weeklyhours()
-  rate = rate()
-  overtimeRate = overtimerate()
-  weeklytaxcredit = weeklytaxcredit()
+
+  def __init__(self,name,weeklyhours,rate,overtimeRate,weeklytaxcredit):
+    self.name =
+    self.weeklyhours = 
+    self.rate = rate()
+    self.overtimeRate = 
+    self.weeklytaxcredit = 
 
   def computeWeeklyPay (self,hrs):
     hrs = input(float("Enter Hours:"))
@@ -13,4 +16,4 @@ class Employee:
 	      print(40* rate + (h-40)*1.5*rate)
 
 
-  def computeTax(self,grossPay)    
+  def computeTax(self,grossPay):
