@@ -8,10 +8,13 @@ class Employee:
     self.weeklytaxcredit = float(weeklytaxcredit)
     
   def computeWeeklyPay (self,hours):
-    if hrs <= 40:
- 	      return ( h  * x)
-    elif hrs > 40:
-	      return (40* rate + (h-40)*1.5*rate)
+    if hours >=0:
+
+      if hours <= 40:
+ 	        return ( hours  * )
+      elif hours > 40:
+	        return (40* rate + (h-40)*1.5*rate)
+    
     else:
       return "Hours cannot be negative"
 
